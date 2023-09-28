@@ -2,6 +2,15 @@
 (max-width: 1023px)
 {
     /*-------------------
+        First section
+    -------------------*/
+    .first_section .title br
+    {
+        display: none;
+    }
+
+
+    /*-------------------
         What spacebox
     -------------------*/
     .what_spacebox
