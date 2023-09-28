@@ -2,129 +2,75 @@
 (max-width: 1023px)
 {
     /*-------------------
-        Global styles
+        What spacebox
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    .what_spacebox
     {
-        padding: 24px;
+        margin-top: -48px;
     }
 
 
-
-    /*------------
-        Header
-    ------------*/
-    header
+    .what_spacebox .before
     {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        left: 0;
-
-        width: 310px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-        transform: translateX(-100%);
-
-        background: #fff;
-    }
-
-    header.show
-    {
-        transform: translateX(0);
+        height: 48px;
     }
 
 
-    header .scroll
+    .what_spacebox .data > div
     {
-        display: flex;
-        overflow: auto;
-
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        padding: 20px 0;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        overscroll-behavior-y: contain;
-    }
-
-    header .scroll > *
-    {
-        width: 100%;
+        padding: 63px 39px;
     }
 
 
-
-    /*-----------------
-        Mob. header
-    -----------------*/
-    .mob_header
+    .what_spacebox .title
     {
-        display: block;
+        font-size: 44px;
     }
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
-
-
-
-    /*----------------
-        Typography
-    ----------------*/
-
-
-
-    /*-----------------
-        Main slider
-    -----------------*/
-
-
-
-    /*------------
-        Footer
-    ------------*/
 
 
 
     /*-----------
-        PopUp
+        Stats
     -----------*/
+    .stats .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .stats .item
+    {
+        padding: 0 24px;
+    }
+
+
+
+    /*------------
+        In use
+    ------------*/
+    .in_use .head .title
+    {
+        font-size: 44px;
+    }
+
+
+    .in_use .item,
+    .in_use .item.bigger,
+    .in_use .item.big
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .in_use .item .logo
+    {
+        width: 220px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .in_use .item .logo img
+    {
+        transform: translate(3px, 5px);
+    }
 }

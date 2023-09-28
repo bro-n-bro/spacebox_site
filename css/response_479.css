@@ -3,68 +3,164 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    .wrap
     {
-        padding: 16px;
+        background-size: 140% auto;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
     }
 
 
 
-    /*-----------------
-        Mob. header
-    -----------------*/
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        height: 40px;
+    }
+
+
+    header .together_link
+    {
+        font-size: 12px;
+    }
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 34px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 16px;
+
+        width: 100%;
+    }
 
 
 
-    /*---------------
-        Page head
-    ---------------*/
+    /*-------------------
+        What spacebox
+    -------------------*/
+    .what_spacebox
+    {
+        margin-top: -32px;
+    }
+
+
+    .what_spacebox .before
+    {
+        height: 32px;
+    }
+
+
+    .what_spacebox .data > div
+    {
+        padding: 39px 19px;
+    }
+
+
+    .what_spacebox .title
+    {
+        font-size: 31px;
+    }
+
+    .what_spacebox .title br
+    {
+        display: none;
+    }
 
 
 
-    /*----------------
-        Block head
-    ----------------*/
+    /*-----------
+        Stats
+    -----------*/
+    .stats
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 36px;
+    }
 
 
 
-    /*------------------
-        Form elements
-    ------------------*/
+    /*------------
+        In use
+    ------------*/
+    .in_use
+    {
+        margin-bottom: 80px;
+    }
 
 
+    .in_use .head
+    {
+        margin-bottom: 40px;
+    }
 
-    /*----------------
-        Typography
-    ----------------*/
+
+    .in_use .head .title
+    {
+        font-size: 32px;
+    }
 
 
+    .in_use .item,
+    .in_use .item.bigger,
+    .in_use .item.big
+    {
+        min-height: 180px;
 
-    /*-----------------
-        Main slider
-    -----------------*/
+        border-radius: 24px;
+    }
+
+    .in_use .item > div
+    {
+        border-radius: 24px;
+    }
+
+    .in_use .item.bigger
+    {
+        height: 400px;
+    }
+
+
+    .in_use .item .logo
+    {
+        width: 180px;
+        height: 164px;
+        padding: 12px;
+
+        border-radius: 48px;
+    }
+
+    .in_use .item .logo img
+    {
+        transform: translate(3px, 4px);
+    }
 
 
 
     /*------------
         Footer
     ------------*/
-
-
-
-    /*-----------
-        PopUp
-    -----------*/
+    footer .logo img
+    {
+        height: 40px;
+    }
 }

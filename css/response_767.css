@@ -4,68 +4,218 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 20px;
+        --font_size: 15px;
+    }
+
+
+    .wrap
+    {
+        background-size: 150% auto;
     }
 
 
 
-    /*-----------------
-        Mob. header
-    -----------------*/
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 20px 0;
+    }
+
+
+    header .logo img
+    {
+        height: 44px;
+    }
+
+
+    header .together_link
+    {
+        font-size: 13px;
+    }
+
+    header .together_link span
+    {
+        padding: 11px 19px;
+    }
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        height: 550px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 40px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 17px;
+
+        width: 360px;
+    }
+
+
+    .first_section .together_link
+    {
+        font-size: 14px;
+    }
+
+    .first_section .together_link span
+    {
+        padding: 15px 27px;
+    }
 
 
 
-    /*---------------
-        Page head
-    ---------------*/
+    /*-------------------
+        What spacebox
+    -------------------*/
+    .what_spacebox
+    {
+        margin-top: -40px;
+        margin-bottom: 60px;
+    }
+
+
+    .what_spacebox .before
+    {
+        width: 80%;
+        height: 40px;
+    }
+
+
+    .what_spacebox .data > div
+    {
+        padding: 47px 23px;
+    }
+
+
+    .what_spacebox .label
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .what_spacebox .title
+    {
+        font-size: 34px;
+    }
 
 
 
-    /*----------------
-        Block head
-    ----------------*/
+    /*-----------
+        Stats
+    -----------*/
+    .stats
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .stats .item
+    {
+        padding: 0;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 44px;
+    }
 
 
 
-    /*------------------
-        Form elements
-    ------------------*/
+    /*------------
+        In use
+    ------------*/
+    .in_use
+    {
+        margin-bottom: 100px;
+    }
 
 
+    .in_use .head
+    {
+        margin-bottom: 40px;
+    }
 
-    /*----------------
-        Typography
-    ----------------*/
+
+    .in_use .head .label
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-bottom: 24px;
+    }
 
 
+    .in_use .head .title
+    {
+        font-size: 36px;
+    }
 
-    /*-----------------
-        Main slider
-    -----------------*/
+
+    .in_use .item,
+    .in_use .item.bigger,
+    .in_use .item.big
+    {
+        width: calc(100% - 24px);
+        min-height: 200px;
+
+        border-radius: 32px;
+    }
+
+    .in_use .item > div
+    {
+        border-radius: 32px;
+    }
+
+    .in_use .item.bigger
+    {
+        height: 428px;
+    }
+
+
+    .in_use .item .logo
+    {
+        border-radius: 60px;
+    }
+
+
+    .in_use .item .name,
+    .in_use .item .desc
+    {
+        width: 240px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer
+    {
+        padding: 20px 0;
+    }
 
 
-
-    /*-----------
-        PopUp
-    -----------*/
+    footer .logo img
+    {
+        height: 44px;
+    }
 }

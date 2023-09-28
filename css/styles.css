@@ -102,11 +102,9 @@ input[type=number]
 :root
 {
     --bg: #000;
-    --sidebar_width: 200px;
     --scroll_width: 17px;
     --text_color: #fff;
     --font_size: 16px;
-    --font_size_title: 30px;
     --font_family: 'Inter', 'Arial', sans-serif;
 }
 
@@ -181,11 +179,6 @@ body
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
-}
-
-body.menu_open
-{
-    overflow: hidden;
 }
 
 
@@ -289,73 +282,6 @@ header .logo
 header .logo img
 {
     display: block;
-}
-
-
-
-header .menu
-{
-    padding: 1px;
-
-    border-radius: 30px;
-    background: linear-gradient(to bottom,rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 100%);
-}
-
-
-header .menu .row
-{
-    padding: 0 23px;
-
-    border-radius: inherit;
-    background: var(--bg);
-}
-
-header .menu .row > * + *
-{
-    margin-left: 16px;
-}
-
-
-header .menu .btn
-{
-    color: #616161;
-    line-height: 100%;
-
-    position: relative;
-
-    padding: 16px 0;
-
-    transition: color .2s linear;
-}
-
-header .menu .btn:after
-{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    width: 0;
-    height: 1px;
-    margin: auto;
-
-    content: '';
-    transition: width .3s linear;
-
-    background: currentColor;
-}
-
-
-header .menu .btn:hover,
-header .menu .btn.active
-{
-    color: #fff;
-}
-
-header .menu .btn:hover:after,
-header .menu .btn.active:after
-{
-    width: 100%;
 }
 
 
@@ -599,7 +525,7 @@ header .together_link:hover span
     color: #909090;
     line-height: 130%;
 
-    width: 812px;
+    width: 840px;
     max-width: 100%;
     margin: 24px auto 0;
 
@@ -619,14 +545,14 @@ header .together_link:hover span
 
 .stats .row
 {
-    margin-bottom: -24px;
+    margin-bottom: -60px;
     margin-left: -24px;
 }
 
 .stats .row > *
 {
     width: calc(25% - 24px);
-    margin-bottom: 24px;
+    margin-bottom: 60px;
     margin-left: 24px;
 }
 
@@ -874,6 +800,19 @@ header .together_link:hover span
 .in_use .item.bigger .desc
 {
     width: 100%;
+}
+
+
+.in_use .item .desc a
+{
+    color: #7d41ff;
+
+    text-decoration: none;
+}
+
+.in_use .item .desc a:hover
+{
+    text-decoration: underline;
 }
 
 

@@ -1,0 +1,182 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 70px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 20px;
+
+        width: 432px;
+    }
+
+
+    .first_section .together_link
+    {
+        font-size: 16px;
+    }
+
+    .first_section .together_link span
+    {
+        padding: 16px 28px;
+    }
+
+
+
+    /*-------------------
+        What spacebox
+    -------------------*/
+    .what_spacebox
+    {
+        margin-top: -60px;
+        margin-bottom: 124px;
+    }
+
+
+    .what_spacebox .before
+    {
+        width: 1024px;
+        height: 60px;
+    }
+
+
+    .what_spacebox .data
+    {
+        border-radius: 40px;
+    }
+
+    .what_spacebox .data > div
+    {
+        padding: 100px;
+
+        border-radius: 40px;
+    }
+
+
+    .what_spacebox .label
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .what_spacebox .title
+    {
+        font-size: 48px;
+
+        width: 640px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats
+    {
+        margin-bottom: 124px;
+    }
+
+
+    .stats .item
+    {
+        padding: 0 24px;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 50px;
+    }
+
+
+
+    /*------------
+        In use
+    ------------*/
+    .in_use
+    {
+        margin-bottom: 124px;
+    }
+
+
+    .in_use .head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .in_use .head .label
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .in_use .head .title
+    {
+        font-size: 48px;
+
+        width: 640px;
+    }
+
+
+    .in_use .item
+    {
+        width: 280px;
+        min-height: 264px;
+
+        border-radius: 40px;
+    }
+
+    .in_use .item.big
+    {
+        width: 440px;
+    }
+
+    .in_use .item.bigger
+    {
+        width: 464px;
+        height: 552px;
+    }
+
+
+    .in_use .item > div
+    {
+        padding: 31px;
+
+        border-radius: 40px;
+    }
+
+
+    .in_use .item .logo
+    {
+        transform: scale(.9);
+    }
+
+
+    .in_use .item .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: 180px;
+    }
+
+
+    .in_use .item .desc
+    {
+        width: 180px;
+    }
+}

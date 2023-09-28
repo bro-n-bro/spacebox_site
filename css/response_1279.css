@@ -12,65 +12,163 @@
 
 
 
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
     {
-        padding: 32px;
+        font-size: 60px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 19px;
+
+        width: 420px;
+    }
+
+
+    .first_section .together_link
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------------
+        What spacebox
+    -------------------*/
+    .what_spacebox
+    {
+        margin-bottom: 120px;
+    }
+
+
+    .what_spacebox .before
+    {
+        width: 85%;
+    }
+
+
+    .what_spacebox .label
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-bottom: 28px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats
+    {
+        margin-bottom: 120px;
+    }
+
+
+    .stats .item
+    {
+        padding: 0 4px;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 48px;
+    }
+
+
+    .stats .item .desc
+    {
+        margin-top: 20px;
     }
 
 
 
     /*------------
-        Header
+        In use
     ------------*/
+    .in_use
+    {
+        margin-bottom: 120px;
+    }
 
 
-
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
+    .in_use .head
+    {
+        margin-bottom: 48px;
+    }
 
 
+    .in_use .head .label
+    {
+        font-size: 15px;
+        line-height: 21px;
 
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
+        margin-bottom: 28px;
+    }
 
 
+    .in_use .item
+    {
+        width: 248px;
+        min-height: 224px;
+    }
 
-    /*----------------
-        Typography
-    ----------------*/
+    .in_use .item.big
+    {
+        width: 320px;
+    }
+
+    .in_use .item.bigger
+    {
+        width: 360px;
+        height: 472px;
+    }
 
 
+    .in_use .item > div
+    {
+        padding: 23px;
+    }
 
-    /*-----------------
-        Main slider
-    -----------------*/
-
-
-
-    /*------------
-        Footer
-    ------------*/
-
+    .in_use .item.bigger > div
+    {
+        padding-top: 63px;
+    }
 
 
-    /*-----------
-        PopUp
-    -----------*/
+    .in_use .item .logo
+    {
+        width: 240px;
+        height: 224px;
+        padding: 16px;
+
+        transform: none;
+    }
+
+    .in_use .item .logo:before
+    {
+        top: -88px;
+        left: -80px;
+
+        transform: scale(.8);
+    }
+
+
+    .in_use .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .in_use .item .desc
+    {
+        margin-top: 20px;
+    }
 }
