@@ -842,6 +842,60 @@ footer .logo img
 
 
 
+footer .socials
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+footer .socials a
+{
+    color: currentColor;
+
+    display: block;
+
+    width: 36px;
+    height: 36px;
+
+    transition: opacity .2s linear;
+    text-decoration: none;
+
+    border-radius: 50%;
+    background: #7d41ff;
+
+    --color2: #7d41ff;
+}
+
+
+footer .socials a + a
+{
+    margin-left: 16px;
+}
+
+
+footer .socials svg
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    border-radius: 50%;
+}
+
+
+footer .socials a:hover
+{
+    opacity: .7;
+}
+
+
+
 footer .copyright
 {
     color: #909090;

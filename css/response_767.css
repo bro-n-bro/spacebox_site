@@ -214,8 +214,31 @@
     }
 
 
+    footer .logo
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     footer .logo img
     {
         height: 44px;
+    }
+
+
+    footer .socials
+    {
+        width: 100%;
+        margin: 28px 0;
+
+        justify-content: center;
+    }
+
+
+    footer .copyright
+    {
+        width: 100%;
+
+        text-align: center;
     }
 }
