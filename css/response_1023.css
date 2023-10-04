@@ -53,6 +53,12 @@
     }
 
 
+    .stats .item .val
+    {
+        font-size: 28px;
+    }
+
+
 
     /*------------
         In use

@@ -78,14 +78,14 @@
 
     .stats .item .val
     {
-        font-size: 48px;
+        font-size: 30px;
     }
 
 
-    .stats .item .desc
+    /* .stats .item .desc
     {
         margin-top: 20px;
-    }
+    } */
 
 
 

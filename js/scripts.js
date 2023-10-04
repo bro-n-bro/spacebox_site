@@ -4,6 +4,16 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 
+const header = document.getElementById('header')
+
+window.addEventListener('scroll', () => {
+    window.scrollY >= header.offsetHeight
+        ? header.classList.add('fixed')
+        : header.classList.remove('fixed')
+})
+
+
+
 window.addEventListener('resize', function () {
 	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 

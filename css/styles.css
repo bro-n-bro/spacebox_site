@@ -251,13 +251,20 @@ button
 ------------*/
 header
 {
-    position: absolute;
+    position: fixed;
     z-index: 9;
     top: 0;
     left: 0;
 
     width: 100%;
     padding: 24px 0;
+
+    transition: background .2s linear;
+}
+
+header.fixed
+{
+    background: #000;
 }
 
 
@@ -567,7 +574,7 @@ header .together_link:hover span
 
 .stats .item .val
 {
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 110%;
 
@@ -581,7 +588,7 @@ header .together_link:hover span
 }
 
 
-.stats .item .desc
+/* .stats .item .desc
 {
     color: #909090;
     line-height: 130%;
@@ -589,7 +596,7 @@ header .together_link:hover span
     margin-top: 24px;
 
     letter-spacing: -.64px;
-}
+} */
 
 
 
