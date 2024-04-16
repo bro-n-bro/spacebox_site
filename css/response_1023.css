@@ -1,13 +1,61 @@
 @media print,
 (max-width: 1023px)
 {
-    /*-------------------
-        First section
-    -------------------*/
-    .first_section .title br
+    /*------------
+        Header
+    ------------*/
+    header .data
+    {
+        padding: 20px 24px;
+    }
+
+
+    header nav
     {
         display: none;
     }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs .btn
+    {
+        font-size: 18px;
+    }
+
+
+    .tab_content.active
+    {
+        padding: 24px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 100px;
+        padding: 220px 0 40px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 60px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 18px;
+
+        width: 428px;
+    }
+
 
 
     /*-------------------
@@ -15,25 +63,35 @@
     -------------------*/
     .what_spacebox
     {
-        margin-top: -48px;
+        margin-bottom: 24px;
+    }
+
+
+    .what_spacebox .data
+    {
+        padding: 39px;
     }
 
 
     .what_spacebox .before
     {
-        height: 48px;
-    }
-
-
-    .what_spacebox .data > div
-    {
-        padding: 63px 39px;
+        height: 52px;
     }
 
 
     .what_spacebox .title
     {
-        font-size: 44px;
+        font-size: 20px;
+
+        width: calc(100% - 280px);
+    }
+
+
+    .what_spacebox .img
+    {
+        right: 40px;
+
+        width: 340px;
     }
 
 
@@ -41,21 +99,37 @@
     /*-----------
         Stats
     -----------*/
-    .stats .row > *
+    .stats
     {
-        width: calc(50% - 24px);
-    }
-
-
-    .stats .item
-    {
-        padding: 0 24px;
+        margin-bottom: 100px;
     }
 
 
     .stats .item .val
     {
-        font-size: 28px;
+        font-size: 22px;
+    }
+
+
+
+    /*---------------------------
+        Supported blockchains
+    ---------------------------*/
+    .supported_blockchains
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .supported_blockchains .swiper-slide
+    {
+        width: 320px;
+    }
+
+
+    .supported_blockchains .item
+    {
+        padding: 26px;
     }
 
 
@@ -63,29 +137,147 @@
     /*------------
         In use
     ------------*/
-    .in_use .head .title
+    .in_use
     {
-        font-size: 44px;
+        margin-bottom: 100px;
     }
 
 
-    .in_use .item,
-    .in_use .item.bigger,
-    .in_use .item.big
+    .in_use .data
     {
-        width: calc(50% - 24px);
+        font-size: 16px;
+
+        width: calc(100% - 368px);
     }
 
 
-    .in_use .item .logo
+    .in_use .data > * + *
     {
-        width: 220px;
-        height: 200px;
-        padding: 18px;
+        margin-top: 20px;
     }
 
-    .in_use .item .logo img
+
+    .in_use .image
     {
-        transform: translate(3px, 5px);
+        width: 340px;
+        height: 284px;
+    }
+
+
+    .in_use .line
+    {
+        margin-top: 48px;
+    }
+
+
+
+    /*------------------
+        Architecture
+    ------------------*/
+    .architecture
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .architecture .data
+    {
+        padding: 24px;
+    }
+
+
+    .architecture .line
+    {
+        margin-top: 48px;
+    }
+
+
+
+    /*-------------
+        Roadmap
+    -------------*/
+    .roadmap
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .roadmap .finish
+    {
+        height: 450px;
+        padding: 32px;
+
+        border-radius: 24px;
+    }
+
+
+    .roadmap .finish .title
+    {
+        font-size: 36px;
+    }
+
+
+    .roadmap .finish .together_link
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .roadmap .line
+    {
+        margin-top: 48px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .feedback .swiper
+    {
+        width: 304px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .top
+    {
+        padding: 0;
+    }
+
+
+    footer .top .title
+    {
+        font-size: 24px;
+
+        width: 440px;
+    }
+
+
+    footer .logo
+    {
+        margin-bottom: 40px;
+    }
+
+
+    footer .nav
+    {
+        display: none;
+    }
+
+
+    footer .copyright
+    {
+        padding-top: 24px;
     }
 }

@@ -4,6 +4,13 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 40px;
+    }
+
+
     html.custom_scroll ::-webkit-scrollbar
     {
         width: 5px;
@@ -12,26 +19,66 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .tabs .btn
+    {
+        font-size: 20px;
+    }
+
+
+    .tab_content.active
+    {
+        padding: 32px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header nav .btn
+    {
+        padding: 12px;
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
+    .first_section
+    {
+        margin-bottom: 120px;
+        padding: 220px 0 60px;
+    }
+
+
     .first_section .title
     {
-        font-size: 60px;
+        font-size: 64px;
     }
 
 
     .first_section .desc
     {
-        font-size: 19px;
+        font-size: 20px;
 
-        width: 488px;
+        width: 500px;
     }
 
 
     .first_section .together_link
     {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
 
@@ -39,24 +86,37 @@
     /*-------------------
         What spacebox
     -------------------*/
-    .what_spacebox
+    .what_spacebox .before
     {
-        margin-bottom: 120px;
+        height: 60px;
     }
 
 
-    .what_spacebox .before
+    .what_spacebox .data
     {
-        width: 85%;
+        padding: 39px 39px 99px;
     }
 
 
     .what_spacebox .label
     {
-        font-size: 15px;
-        line-height: 21px;
+        font-size: 20px;
+    }
 
-        margin-bottom: 28px;
+
+    .what_spacebox .title
+    {
+        font-size: 22px;
+
+        width: 520px;
+    }
+
+
+    .what_spacebox .img
+    {
+        right: 64px;
+
+        width: 400px;
     }
 
 
@@ -72,20 +132,52 @@
 
     .stats .item
     {
-        padding: 0 4px;
+        padding: 24px 0;
     }
 
 
     .stats .item .val
     {
-        font-size: 30px;
+        font-size: 26px;
     }
 
 
-    /* .stats .item .desc
+    .stats .line
     {
-        margin-top: 20px;
-    } */
+        height: 2px;
+        margin-top: 10px;
+    }
+
+
+
+    /*---------------------------
+        Supported blockchains
+    ---------------------------*/
+    .supported_blockchains
+    {
+        margin-bottom: 120px;
+    }
+
+
+    .supported_blockchains .item
+    {
+        padding: 30px;
+
+        border-width: 2px;
+    }
+
+
+    .supported_blockchains .item .thumb
+    {
+        height: 180px;
+        margin-bottom: 40px;
+    }
+
+
+    .supported_blockchains .item .name
+    {
+        font-size: 20px;
+    }
 
 
 
@@ -94,81 +186,197 @@
     ------------*/
     .in_use
     {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
 
 
-    .in_use .head
+    .in_use .data
+    {
+        font-size: 18px;
+
+        width: calc(100% - 524px);
+    }
+
+
+    .in_use .image
+    {
+        width: 500px;
+        height: 420px;
+    }
+
+
+    .in_use .line
+    {
+        height: 2px;
+        margin-top: 68px;
+    }
+
+
+
+    /*------------------
+        Architecture
+    ------------------*/
+    .architecture
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .architecture .data
+    {
+        padding: 32px;
+    }
+
+
+    .architecture .line
+    {
+        height: 2px;
+        margin-top: 68px;
+    }
+
+
+
+    /*-------------
+        Roadmap
+    -------------*/
+    .roadmap
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .roadmap .list > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+    .roadmap .map
+    {
+        display: flex;
+        align-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        height: auto;
+        margin-bottom: -40px;
+        margin-left: -24px;
+
+        border-radius: 0;
+        background: none;
+    }
+
+
+    .roadmap .map .bg,
+    .roadmap .map .path
+    {
+        display: none;
+    }
+
+
+    .roadmap .map .item
+    {
+        position: relative;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+
+        display: flex;
+        flex-direction: column;
+
+        width: calc(33.333% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .roadmap .map .item .planet
+    {
+        display: none;
+    }
+
+
+    .roadmap .map .item .info
+    {
+        flex: 1 0 auto;
+        order: 2;
+    }
+
+
+    .roadmap .map .item .info + .date
+    {
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+
+
+    .roadmap .finish
+    {
+        height: 550px;
+        padding: 40px;
+    }
+
+
+    .roadmap .finish .title
+    {
+        font-size: 40px;
+    }
+
+
+    .roadmap .finish .together_link
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-left: 24px;
+        padding: 16px 24px;
+    }
+
+
+    .roadmap .line
+    {
+        height: 2px;
+        margin-top: 68px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .item .text
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .top
     {
         margin-bottom: 48px;
+        padding: 0 40px;
     }
 
 
-    .in_use .head .label
+    footer .top .title
+    {
+        font-size: 26px;
+
+        width: 560px;
+    }
+
+
+    footer .top .together_link
     {
         font-size: 15px;
         line-height: 21px;
 
-        margin-bottom: 28px;
-    }
-
-
-    .in_use .item
-    {
-        width: 248px;
-        min-height: 224px;
-    }
-
-    .in_use .item.big
-    {
-        width: 320px;
-    }
-
-    .in_use .item.bigger
-    {
-        width: 360px;
-        height: 472px;
-    }
-
-
-    .in_use .item > div
-    {
-        padding: 23px;
-    }
-
-    .in_use .item.bigger > div
-    {
-        padding-top: 63px;
-    }
-
-
-    .in_use .item .logo
-    {
-        width: 240px;
-        height: 224px;
-        padding: 16px;
-
-        transform: none;
-    }
-
-    .in_use .item .logo:before
-    {
-        top: -88px;
-        left: -80px;
-
-        transform: scale(.8);
-    }
-
-
-    .in_use .item .name
-    {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-
-    .in_use .item .desc
-    {
-        margin-top: 20px;
+        padding: 15px 27px;
     }
 }

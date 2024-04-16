@@ -3,6 +3,13 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 32px;
+    }
+
+
     .wrap
     {
         background-size: 140% auto;
@@ -16,18 +23,40 @@
 
 
 
-    /*------------
-        Header
-    ------------*/
-    header .logo img
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
     {
-        height: 40px;
+        margin-bottom: 32px;
     }
 
 
-    header .together_link
+    .tabs .btn
     {
-        font-size: 12px;
+        font-size: 17px;
+    }
+
+
+    .tab_content.active
+    {
+        padding: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .data
+    {
+        padding: 12px 20px;
+    }
+
+
+    header .logo img
+    {
+        height: 40px;
     }
 
 
@@ -35,17 +64,30 @@
     /*-------------------
         First section
     -------------------*/
+    .first_section
+    {
+        padding: 168px 0 40px;
+    }
+
+
     .first_section .title
     {
-        font-size: 34px;
+        font-size: 36px;
     }
 
 
     .first_section .desc
     {
-        font-size: 16px;
+        font-size: 15px;
 
-        width: 268px;
+        width: 100%;
+    }
+
+
+    .first_section .together_link
+    {
+        font-size: 15px;
+        line-height: 21px;
     }
 
 
@@ -53,32 +95,33 @@
     /*-------------------
         What spacebox
     -------------------*/
-    .what_spacebox
-    {
-        margin-top: -32px;
-    }
-
-
     .what_spacebox .before
     {
-        height: 32px;
+        display: none;
     }
 
 
-    .what_spacebox .data > div
+    .what_spacebox .data
     {
-        padding: 39px 19px;
+        padding: 31px 19px 379px;
+    }
+
+    .what_spacebox .data:before
+    {
+        width: 240px;
+        height: 220px;
+    }
+
+
+    .what_spacebox .label
+    {
+        font-size: 20px;
     }
 
 
     .what_spacebox .title
     {
-        font-size: 31px;
-    }
-
-    .what_spacebox .title br
-    {
-        display: none;
+        font-size: 18px;
     }
 
 
@@ -94,7 +137,23 @@
 
     .stats .item .val
     {
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+
+
+    /*---------------------------
+        Supported blockchains
+    ---------------------------*/
+    .supported_blockchains .item
+    {
+        padding: 22px 26px;
+    }
+
+
+    .supported_blockchains .item .name
+    {
+        font-size: 18px;
     }
 
 
@@ -104,54 +163,90 @@
     ------------*/
     .in_use
     {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 
 
-    .in_use .head
+    .in_use .image
     {
-        margin-bottom: 40px;
+        margin-top: 20px;
     }
 
 
-    .in_use .head .title
+
+    /*------------------
+        Architecture
+    ------------------*/
+    .architecture
     {
-        font-size: 32px;
+        margin-bottom: 100px;
     }
 
 
-    .in_use .item,
-    .in_use .item.bigger,
-    .in_use .item.big
+    .architecture .data
     {
-        min-height: 180px;
-
-        border-radius: 24px;
+        padding: 20px;
     }
 
-    .in_use .item > div
+
+
+    /*-------------
+        Roadmap
+    -------------*/
+    .roadmap
     {
-        border-radius: 24px;
+        margin-bottom: 100px;
     }
 
-    .in_use .item.bigger
+
+    .roadmap .map
+    {
+        margin-bottom: -32px;
+        margin-left: 0;
+    }
+
+
+    .roadmap .map .item
+    {
+        width: 100%;
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+
+
+    .roadmap .finish
     {
         height: 400px;
+        padding: 20px;
     }
 
 
-    .in_use .item .logo
+    .roadmap .finish .title
     {
-        width: 180px;
-        height: 164px;
-        padding: 12px;
-
-        border-radius: 48px;
+        font-size: 28px;
     }
 
-    .in_use .item .logo img
+
+    .roadmap .finish .together_link
     {
-        transform: translate(3px, 4px);
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .feedback .item
+    {
+        padding: 23px 19px 24px;
     }
 
 
@@ -159,8 +254,8 @@
     /*------------
         Footer
     ------------*/
-    footer .logo img
+    footer .copyright
     {
-        height: 40px;
+        font-size: 13px;
     }
 }
